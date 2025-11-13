@@ -1,0 +1,47 @@
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio folders
+.vs/
+ipch/
+*.VC.db
+*.VC.opendb
+
+# Build directories
+Debug/
+Release/
+x64/Debug/
+x64/Release/
+
+# Intermediate / generated files
+*.obj
+*.o
+*.pch
+*.idb
+*.pdb
+*.ipdb
+*.iobj
+*.ipch
+*.res
+*.exe
+*.dll
+*.lib
+*.app
+*.out
+*.class
+*.log
+
+# Others
+*.ncb
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.bak
+*.tmp
+
+# Config / cache (optional)
+*.vsconfig
