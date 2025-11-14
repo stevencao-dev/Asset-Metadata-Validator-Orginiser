@@ -22,6 +22,8 @@ void FileProcessor::PrintDirectoryContents(const std::string& directoryPath)
 		// logging already exists in ValidatePath
 		return;
 	}
+
+	// Declaring in the loop is fine too as modern compilers optimize it well. Only tiny optimisation gains here.
 	std::string fileName;
 	for (const auto& entry :std::filesystem::recursive_directory_iterator(directoryPath))
 	{
