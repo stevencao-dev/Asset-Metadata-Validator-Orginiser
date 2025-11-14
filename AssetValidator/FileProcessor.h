@@ -4,13 +4,15 @@
 class FileProcessor
 {
 public:
-	FileProcessor(Validator validator): m_Validator(validator) {};
+	FileProcessor() {};
 	~FileProcessor() {};
 
-	void ReadFile(const std::string& filePath);
 	void PrintDirectoryContents(const std::string& directoryPath);
+	void ExportToCSV(const std::string& directoryPath, std::string& exportCSVPath);
+	void CompareWithCSV(const std::string& directoryPath, const std::string& csvPath);
 
 private:
-	Validator& m_Validator;
+
+	std::string ResolvePathExtension(std::string& path);
 };
 

@@ -1,12 +1,11 @@
 #pragma once
 #include <string>
+#include <filesystem>
 class Validator
 {
 public:
-	Validator() {};
-	~Validator() {};
 
-	bool ValidatePath(const std::string& assetPath);
+	static std::optional<std::filesystem::path> ValidatePath(const std::string& assetPath);
 
 };
 
