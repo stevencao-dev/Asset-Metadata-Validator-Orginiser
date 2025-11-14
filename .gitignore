@@ -4,6 +4,7 @@ ipch/
 *.VC.db
 *.VC.opendb
 *.sln
+*.slnx
 *.vcxproj*
 *.user
 *.filters
